@@ -1,0 +1,92 @@
+.fauxterm-input {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	width: 0px;
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+	opacity: 0;
+}
+
+.fauxterm {
+	background: #000;
+	min-width: 320px;
+	min-height: 240px;
+	color: #aaa;
+	font-family: Monaco, monospace;
+	font-weight: 400;
+	font-smooth: never;
+	-webkit-font-smoothing : none;
+	font-size: 10.5pt;
+	padding: 3px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	display: block;
+	line-height: 1.2em;
+	overflow-y: scroll;
+	position: relative;
+	color: #888;
+}
+
+.fauxterm-focus {
+	text-shadow: none;
+	color: #ccc;
+}
+
+.fauxterm .red {
+	color: red;
+}
+.fauxterm .blue {
+	color: blue;
+}
+.fauxterm .white {
+	color: #fff;
+}
+.fauxterm .bold {
+	font-weight: bold;
+}
+
+.fauxterm-bell {
+	width: 0.1em;
+	height: 1.1em;
+	line-height: 1.2em;
+	background: #fff;
+	position: absolute;
+	animation: fauxterm-flash 1s infinite;
+}
+
+@keyframes fauxterm-flash {
+	0% {
+		visibility: visible;
+	}
+	49% {
+		visibility: visible;
+	}
+	50% {
+		visibility: hidden;
+	}
+	99% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #111;
+}

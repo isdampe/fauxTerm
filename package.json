@@ -1,0 +1,11 @@
+{
+  "name": "fauxTerm",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-autoprefixer": "*",
+		"grunt-contrib-cssmin": "*"
+  }
+}
